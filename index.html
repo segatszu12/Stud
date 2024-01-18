@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<nav>
+	<ul>
+		<li>
+			<center>
+			<a href="#">Home</a>
+			<a href="#div1">About</a>
+			<a href="#div2">Courses</a>
+			<a href="#div3">Aminities</a>
+			<a href="#div2">Contact</a>
+			</center>
+		</li>
+	</ul>
+</nav>
+
+<div class="home">
+	<img src="christian.jpg" width="100%" height="1400vh">
+	<center><h1>About page</h1></center><br>
+</div>
+<center><div class="self">
+	<center>
+		<br><h1 style="color: red; font-family: cursive;">Home page</h1><p class="p1" style="color: gray; letter-spacing: 3px; font-family: unset; line-height: 30px;">Hello I am Christian padilla torre BSIT student live in<br> Victorias City, Negros Ocidental City and being as an IT student is great.<br> because we can explore alot of technologies and other<br> advance modernization tools</p>
+	</center>
+</div></center>
+</body>
+</html>
+
+<div id="div1" class="about">
+<div class="mission"><center><h1>Mission</h1><strong><p style="color: dimgray;line-height: 40px; font-family: serif;
+letter-spacing: 2px;">CPSU is commited to produce competent graduates<br>
+who can generate and extend leading technologies in<br> multi-diciplinary areas beneficial to the community.</center></p></strong>
+</center></div>
+<div class="vission"><center><h1>Vission</h1><br><strong><p style="color: dimgray;line-height: 40px; font-family: serif;
+letter-spacing: 2px;">CPSU as the leading technology-driven<br> multi-diciplinary University by 2030.</center></p></strong></div>
+</div>
+<br><center>
+<img src="history.jpg" class="history" width="50%" height="700vh"></center>
+
+<div id="div2"class="Courses"><br><br><br><br><br><br><br><br><br><center><h1>courses</h1><br><br><strong><p style="background-color: dodgerblue; height: 50px; color: white"><br>Information technology</p></strong><br><center><h1>Contact</h1><br><p style="background-color: dodgerblue; height: 50px; color: white"><br>0932434234</p></center></div>
+<div id="div3" class="aminities"><center><h1 style="color: white">Aminities</h1></center><img src="aminities.jpg" width="100%" height="100%"></div>
+
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+  var scrollLinks = document.querySelectorAll('[href^="#"]');
+  
+  scrollLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      var targetId = this.getAttribute('href');
+      var targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+
+
+
+</script>
+<style type="text/css">
+	 .scroll-div {
+  height: 500px;
+  margin-bottom: 20px;
+}
+.aminities{
+	width: 100%;
+	height: 100vh;
+	background-color: blue;
+	position: relative;
+	top: 500px;
+}
+.Courses{
+	position: relative;
+	width: 80%;
+	height: 90vh;
+		
+		left: 120px;
+		top: 400px;
+		border-radius: 30px;
+}
+ 
+/* Optional styles for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+	body{
+		font-family: sans-serif;
+		margin: 0;
+	}
+	nav{
+		background-color: blue;
+	}
+	.history{
+		position: absolute;
+		top: 1100px;
+		left: 300px;
+		border-radius: 20px;
+	}
+	ul{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+	}
+	li{
+		padding: 10px 20px;
+	}
+	a{
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+		font-size: 15px;
+		margin-right: 20px;
+		position: relative;
+		left: 10px;
+	}
+	.about{
+		position: relative;
+		top: 130px;
+		width: 100%;
+		height: 85vh;
+		background-color: white;
+		display: flex;
+	}
+	a:hover{
+		color: lightgray;
+	}
+	.home{
+		width: 100%;
+		height: 60vh;
+		background-color: dodgerblue;
+	}
+	.self:hover{
+transform: scale(1.1);
+	}
+	.mission{
+	    transition: 0.1s ease;
+		width: 50%;
+		height: 70vh;
+		background-color: white;
+		position: relative;
+		top: 20px;
+	    border-radius: 10px;
+		box-shadow: 0 4px 4px 4px rgba(0,0,0,0.3);	
+	}
+	.vission{
+	    transition: 0.1s ease;
+		width: 50%;
+		height: 70vh;
+		background-color: white;
+		position: relative;
+		top: 20px;
+	    border-radius: 10px;
+		box-shadow: 0 4px 4px 4px rgba(0,0,0,0.3);	
+	}
+	.self{
+		
+		transition: 0.1s ease;
+		width: 70%;
+		height: 40vh;
+		background-color: white;
+		position: relative;
+		top: -55vh;
+	border-radius: 10px;
+		box-shadow: 0 4px 4px 4px rgba(0,0,0,0.3);
+	}
+	@media(max-width: 600px){
+.p1{
+	color: white;
+	font-size: 13px;
+	line-height: -10px;
+	}
+	.self{
+		height: 315px;
+		width: 100%;
+		border-radius: 0px;
+
+	}
+	.mission{
+	    transition: 0.1s ease;
+		width: 50%;
+		height: 75vh;
+		background-color: white;
+		position: relative;
+		top: 20px;
+	    border-radius: 10px;
+		box-shadow: 0 4px 4px 4px rgba(0,0,0,0.3);	
+	}
+	.vission{
+	    transition: 0.1s ease;
+		width: 50%;
+		height: 75vh;
+		background-color: white;
+		position: relative;
+		top: 20px;
+	    border-radius: 10px;
+		box-shadow: 0 4px 4px 4px rgba(0,0,0,0.3);	
+	}
+	.history{
+		width: 100%;
+	
+		top: 215%;
+		left: 0px;
+		border-radius: 20px;
+	}
+	.about{
+		position: relative;
+		top: 90px;
+		width: 100%;
+		height: 85vh;
+		background-color:blue;
+		display: flex;
+	}
+	
+.Courses{
+	position: relative;
+	width: 100%;
+	height: 90vh;
+			
+		left: -0px;
+		top: 750px;
+		border-radius: 0px;
+		background-color: white;
+}
+.aminities{
+	height: 50vh;
+	position: relative;
+	top: 900px;
+}
+}
+</style>
